@@ -53,7 +53,7 @@ const TableBody = ({
                     <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                         <button
                             onClick={() => onViewDetails(transaction)}
-                            className="text-blue-600 hover:text-blue-900 flex items-center gap-1 cursor-pointer dark:text-blue-400"
+                            className="text-blue-600 hover:text-blue-900  flex items-center gap-1 cursor-pointer dark:text-blue-400 dark:hover:text-blue-300"
                         >
                             <Eye className="h-4 w-4" />
                             View Details
