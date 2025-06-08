@@ -5,14 +5,14 @@ const DashboardHeader = () => {
     const { isDarkMode, toggleTheme } = useTheme();
 
     return (
-        <div className="mt-2 mb-2 flex justify-between items-center">
+        <div className="mt-2 mb-2 flex justify-between items-center" >
             <h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2">Financial Transaction Dashboard</h1>
 
             <div className="flex items-center gap-2">
 
                 <button
                     onClick={toggleTheme}
-                    className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex items-center gap-2 cursor-pointer border border-gray-200 dark:border-gray-700"
+                    className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center gap-2 cursor-pointer border border-gray-200 dark:border-gray-700"
                     aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
                 >
                     <span className="text-gray-500 dark:text-gray-400">Switch Theme</span>

@@ -2,13 +2,13 @@ import { getStatusColor } from "../../hooks/helpers";
 import type { Transaction } from "../../interfaces/Types";
 import { Calendar, CreditCard, DollarSign, User, X } from "lucide-react";
 import TransactionDetailField from "./TransactionDetailsField";
-// add dark mode
+
 const TransactionDetailsModal = ({ transaction, onClose }: { transaction: Transaction | null, onClose: () => void }) => {
     if (!transaction) return null;
 
     return (
         <div className="fixed inset-0 bg-gray-600/50  overflow-y-auto h-full w-full z-50">
-            <div className="relative top-20 mx-auto p-5 ring-gray-200 w-11/12 md:w-3/4 lg:w-1/2 shadow-lg rounded-md bg-white dark:bg-gray-800">
+            <div className="relative top-20 mx-auto  p-5 ring-gray-200 max-w-xl  shadow-lg rounded-md bg-white dark:bg-gray-800">
                 <div className="flex items-center justify-between mb-6">
                     <h3 className="text-lg font-medium text-gray-900 dark:text-white">Transaction Details</h3>
                     <button
@@ -76,15 +76,6 @@ const TransactionDetailsModal = ({ transaction, onClose }: { transaction: Transa
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div className="mt-8 flex justify-end">
-                <button
-                    onClick={onClose}
-                    className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 cursor-pointer  "
-                >
-                    Close
-                </button>
             </div>
         </div>
     );

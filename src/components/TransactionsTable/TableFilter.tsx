@@ -88,7 +88,7 @@ const TableFilter = ({
                         {hasActiveFilters && (
                             <button
                                 onClick={onClearFilters}
-                                className="flex items-center gap-1 px-3 py-1 text-sm text-red-600 hover:text-red-800 border border-red-200 rounded-md hover:bg-red-50 dark:text-red-400 dark:border-red-700 dark:hover:bg-red-700"
+                                className="flex items-center gap-1 px-3 py-1 text-sm cursor-pointer text-red-600 hover:text-red-800 dark:text-red-400 border border-red-200 rounded-md hover:bg-red-50 dark:border-red-300 dark:hover:bg-red-300"
                             >
                                 <X className="h-4 w-4" />
                                 Clear All

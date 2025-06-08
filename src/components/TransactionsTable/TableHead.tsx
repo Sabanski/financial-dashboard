@@ -18,7 +18,7 @@ const TableHead = ({
 
     return (
         <th
-            className="px-6 py-3 text-left text-xs font-medium text-gray-900 dark:text-white uppercase tracking-wider cursor-pointer hover:bg-gray-100 select-none"
+            className="px-6 py-3 text-left text-xs font-medium   text-gray-900 dark:text-white uppercase tracking-wider cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 select-none"
             onClick={() => onSort(column)}
         >
             <div className="flex items-center gap-1">

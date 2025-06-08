@@ -74,7 +74,7 @@ const Dashboard: React.FC = () => {
     return (
         <ThemeProvider>
             <div className="min-h-screen bg-white dark:bg-gray-900 p-6">
-                <div className="flex flex-col gap-2 max-w-7xl *:dark:bg-gray-800 ">
+                <div className="flex flex-col gap-2 max-w-7xl mx-auto ">
                     <DashboardHeader />
 
                     <TableFilter
